@@ -1,0 +1,134 @@
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 98vh;
+    width: 100vw;
+}
+
+.toast{
+    padding: 10px 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin: 10px;
+    border-radius: 20px;
+    position: absolute;
+    top:0;
+}
+.registrationBox{
+    /* border: 1px solid black; */
+    padding: 25px;
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+textarea{
+    resize: none;
+
+} 
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.fonts{
+    color:black;
+    padding: 7px 5px;
+    font-size: 16px;
+    border:1px solid #c3c3c7;
+    border-radius: 5px;
+    margin: 5px;
+    width: 90%;
+    outline:none;
+}
+
+.firstName, .lastName{
+    width: 42%;
+}
+
+.inputsFirst ,.inputsSecond{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputsFirst, .inputsSecond, .inputsThird{
+    width:100%;
+    /* border: 1px solid black; */
+    
+}
+
+.inputsSecond{
+    align-items: center;
+    justify-content: center;
+}
+.inputsThird{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.inputsFourth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    /* border:1px solid black */
+}
+
+.inputsFourth .firstPass, .secondPass{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.passBtn{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    padding: 1px;
+    background-color: #e6e6e8;
+    color: #666669;
+}
+.passInput{
+    width: 78%;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.rulesBox{
+    width: 100%;
+    font-weight: 700;
+}
+
+.listBox{
+    font-size: 10px;
+    
+}
+
+.submitBtn{
+    width: 92%;
+    background: #313ef5;
+    color: white;
+}
+
+@media (max-width:1200px) {
+    .registrationBox{
+        width: 40%;
+    }
+}
+@media (max-width:500px) {
+    .registrationBox{
+        width: 80%;
+    }
+    .toast{
+        top:8%;
+    }
+}
